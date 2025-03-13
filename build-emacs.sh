@@ -8,7 +8,7 @@ apt install -y libxpm-dev libjpeg-dev libpng-dev libgif-dev libtiff-dev libgnutl
 cd && wget https://ftp.gnu.org/gnu/emacs/emacs-$VERSION.tar.xz || exit
 tar -xf emacs-$VERSION.tar.xz || exit
 cd emacs-$VERSION || exit
-./configure --with-native-compilation --with-gnutls --with-json --with-x-toolkit=no
+./configure --with-gnutls --with-x-toolkit=no
 make -j && make install
 
 # clear
