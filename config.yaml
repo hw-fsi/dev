@@ -1,0 +1,2 @@
+compileFlags:
+  Add: [-I/usr/local/include, -I/usr/include/c++/12, -I/usr/include/x86_64-linux-gnu/c++/12]
