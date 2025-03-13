@@ -5,7 +5,7 @@ version `0.1`
 ## build
 
 ```bash
-docker build -t ghcr.io/hw-fsi/dev:0.1 .
+docker build -t ghcr.io/hw-fsi/dev .
 ```
 
 ## test
