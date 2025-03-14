@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export DEBIAN_FRONTEND=noninteractive
+
 ln -s /usr/bin/python3 /usr/bin/python
 apt install -y python3-pip pipx
 pip install --upgrade argcomplete
