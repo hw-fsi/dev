@@ -1,14 +1,17 @@
 #!/bin/bash
 
+DOOM_BIN=~/.config/emacs/bin/doom
+DOOM_CONF_DIR=~/.config/doom
+
 # doom emacs
-mkdir ~/.config/doom -p
+mkdir $DOOM_CONF_DIR -p
 git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.config/emacs
 sed -i '129s|:repo "https://git.savannah.gnu.org/git/emacs/nongnu.git"|:repo "https://github.com/emacsmirror/nongnu_elpa.git"|' ~/.config/emacs/lisp/lib/packages.el
 
-~/.config/emacs/bin/doom env
-~/.config/emacs/bin/doom install
-cp ~/*.el ~/.config/doom/
-doom sync -j 64
+$DOOM_BIN env
+$DOOM_BIN install
+cp ~/*.el $DOOM_CONF_DIR
+$DOOM_BIN sync -j 64
 
 # doom doctor
 apt install -y markdown shellcheck ispell
