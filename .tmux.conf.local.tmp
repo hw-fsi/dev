@@ -291,6 +291,8 @@ bind-key -T copy-mode-vi 'v' send -X begin-selection
 bind-key -T copy-mode-vi 'y' send -X copy-selection-and-cancel
 set -g prefix M-o
 bind M-o send-prefix
+set -g default-shell /bin/zsh
+set -g default-command /bin/zsh
 set -g @themepack 'powerline/double/cyan'
 # move status line to top
 #set -g status-position top
