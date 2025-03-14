@@ -79,7 +79,7 @@
  :config
  (setq! gptel-api-key "your api key"))
 ;; OPTIONAL configuration
-(setq gptel-model   "deepseek-chat"
+(setq gptel-model 'deepseek-chat
       gptel-backend
       (gptel-make-openai "DeepSeek"     ;Any name you want
         :host "api.deepseek.com"

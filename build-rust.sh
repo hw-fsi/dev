@@ -10,7 +10,7 @@ $RUST_UP_BIN component add rust-src
 cd || exit
 git clone https://github.com/rust-analyzer/rust-analyzer.git && cd rust-analyzer || exit
 $CARGO_BIN xtask install
-$CARGO_BIN xtask fd-find
+$CARGO_BIN install fd-find
 
 export DEBIAN_FRONTEND=noninteractive
 
