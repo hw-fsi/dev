@@ -29,9 +29,3 @@ docker exec -it --detach-keys="ctrl-z,z" angel /bin/zsh
 git config --global user.name $your_name
 git config --global user.email $your_email
 ```
-
-## doom emacs
-
-``` bash
-doom sync -j 64
-```
