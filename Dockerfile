@@ -15,6 +15,10 @@ RUN /root/build-dev-tools.sh
 COPY build-emacs.sh /root/build-emacs.sh
 RUN /root/build-emacs.sh
 
+# nodejs
+COPY build-nodejs.sh /root/build-nodejs.sh
+RUN /root/build-nodejs.sh
+
 # python
 COPY build-python.sh /root/build-python.sh
 RUN /root/build-python.sh

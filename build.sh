@@ -4,7 +4,7 @@ export DEBIAN_FRONTEND=noninteractive
 
 # base
 apt update
-apt install -y build-essential apt-utils git zsh vim tmux curl wget ack-grep rsync ccache clang clang-format clangd software-properties-common python3 nodejs npm
+apt install -y build-essential apt-utils git zsh vim tmux curl wget ack-grep rsync ccache clang clang-format clangd software-properties-common python3
 
 # gcc-12
 add-apt-repository -y ppa:ubuntu-toolchain-r/test

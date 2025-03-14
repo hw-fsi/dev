@@ -30,6 +30,9 @@ run_script build-dev-tools.sh
 # emacs
 run_script build-emacs.sh
 
+# nodejs
+run_script build-nodejs.sh
+
 # python
 run_script build-python.sh
 
