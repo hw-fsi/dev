@@ -173,6 +173,7 @@ run 'cut -c3- ~/.tmux.conf | sh -s _apply_configuration'
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'jimeh/tmux-themepack'
+set-environment -g TMUX_PLUGIN_MANAGER_PATH '~/.tmux/plugins/'
 
 # Other examples:
 # set -g @plugin 'github_username/plugin_name'

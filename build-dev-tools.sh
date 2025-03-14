@@ -29,6 +29,7 @@ cp ~/.zshrc.tmp ~/.zshrc
 cd && git clone https://github.com/gpakosz/.tmux.git
 cp .tmux.conf.tmp .tmux.conf && cp .tmux.conf.local.tmp .tmux.conf.local
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+tmux source-file ~/.tmux.conf
 ~/.tmux/plugins/tpm/scripts/install_plugins.sh
 
 # clear
