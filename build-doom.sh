@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 DOOM_BIN=~/.config/emacs/bin/doom
 DOOM_CONF_DIR=~/.config/doom

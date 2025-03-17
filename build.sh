@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 export DEBIAN_FRONTEND=noninteractive
 
@@ -17,7 +17,7 @@ update-alternatives --set gcc /usr/bin/gcc-12
 apt update
 apt -y install locales tzdata
 locale-gen en_US.UTF-8
-echo "LANG=en_US.UTF-8" >> /etc/default/locale
+echo "LANG=en_US.UTF-8" >>/etc/default/locale
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
 

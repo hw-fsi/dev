@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 RUST_UP_BIN=~/.cargo/bin/rustup
 CARGO_BIN=~/.cargo/bin/cargo
