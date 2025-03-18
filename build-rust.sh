@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
 RUST_UP_BIN=~/.cargo/bin/rustup
 CARGO_BIN=~/.cargo/bin/cargo

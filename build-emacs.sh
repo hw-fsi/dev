@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
 VERSION=30.1
 GCC_VERSION=12
