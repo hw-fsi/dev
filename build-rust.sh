@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
+export DEBIAN_FRONTEND=noninteractive
 
 RUST_UP_BIN=~/.cargo/bin/rustup
 CARGO_BIN=~/.cargo/bin/cargo
@@ -13,12 +14,10 @@ git clone https://github.com/rust-analyzer/rust-analyzer.git && cd rust-analyzer
 $CARGO_BIN xtask install --server --jemalloc
 $CARGO_BIN install fd-find
 
-export DEBIAN_FRONTEND=noninteractive
-
 cd || exit
 git clone https://github.com/BurntSushi/ripgrep && cd ripgrep || exit
-~/.cargo/bin/cargo build --release --features 'pcre2'
+$CARGO_BIN build --release --features 'pcre2'
 cp target/release/rg ~/.cargo/bin/rg
 
-clear
+# clear
 cd && rm rust-analyzer ripgrep -rf
