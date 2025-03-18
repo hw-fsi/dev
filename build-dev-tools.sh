@@ -23,7 +23,7 @@ python3 ./configure.py --bootstrap
 cp ninja /usr/local/bin
 
 # zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+CHSH=yes sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp ~/.zshrc.tmp ~/.zshrc
 
 # tmux
