@@ -2,7 +2,7 @@
 set -euo pipefail
 
 VERSION=30.1
-GCC_VERSION=12
+GCC_VERSION=13
 
 apt install -y libxpm-dev libjpeg-dev libpng-dev libgif-dev libtiff-dev libgnutls28-dev pkg-config fontconfig libjansson-dev libgccjit-$GCC_VERSION-dev fonts-emojione shfmt glslang-tools texinfo
 

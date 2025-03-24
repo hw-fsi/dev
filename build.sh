@@ -7,12 +7,12 @@ export DEBIAN_FRONTEND=noninteractive
 apt update
 apt install -y build-essential apt-utils git zsh vim tmux curl wget libssl-dev ack-grep rsync ccache clang clang-format clangd clang-tidy software-properties-common python3
 
-# gcc-12
+# gcc-13
 add-apt-repository -y ppa:ubuntu-toolchain-r/test
 apt update
-apt -y install gcc-12 g++-12
-update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 60 --slave /usr/bin/g++ g++ /usr/bin/g++-12
-update-alternatives --set gcc /usr/bin/gcc-12
+apt -y install gcc-13 g++-13
+update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 60 --slave /usr/bin/g++ g++ /usr/bin/g++-13
+update-alternatives --set gcc /usr/bin/gcc-13
 
 # locale
 apt update

@@ -1,6 +1,6 @@
 # dev-machine
 
-version `0.1`
+version `0.2`
 
 ## build
 
@@ -17,14 +17,14 @@ docker run -it --rm -v `pwd`/..:/root/code ghcr.io/hw-fsi/dev /bin/zsh
 ## deploy
 
 ```
-docker tag ghcr.io/hw-fsi/dev ghcr.io/hw-fsi/dev:0.1
-docker push ghcr.io/hw-fsi/dev:0.1
+docker tag ghcr.io/hw-fsi/dev ghcr.io/hw-fsi/dev:0.2
+docker push ghcr.io/hw-fsi/dev:0.2
 ```
 
 ## run
 
 ```bash
-docker run --network host --privileged -d -it --name angel -v `pwd`:/root/code -w /root/code ghcr.io/hw-fsi/dev:0.1
+docker run --network host --privileged -d -it --name angel -v `pwd`:/root/code -w /root/code ghcr.io/hw-fsi/dev:0.2
 docker exec -it --detach-keys="ctrl-z,z" angel /bin/zsh
 git config --global user.name $your_name
 git config --global user.email $your_email
