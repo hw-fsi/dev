@@ -76,8 +76,8 @@
 ;; they are implemented.
 
 (use-package! gptel
- :config
- (setq! gptel-api-key "your api key"))
+  :config
+  (setq! gptel-api-key "your api key"))
 ;; OPTIONAL configuration
 (setq gptel-model 'deepseek-chat
       gptel-backend
@@ -115,8 +115,8 @@
 
 (defun replace-and-trim-latex (arg1 arg2)
   (progn
-  (replace-latex-delimiters arg1 arg2)
-  (replace-dollar-spaces arg1 arg2)))
+    (replace-latex-delimiters arg1 arg2)
+    (replace-dollar-spaces arg1 arg2)))
 
 (add-hook 'gptel-post-response-functions 'replace-and-trim-latex)
 
@@ -130,9 +130,6 @@
                     (">=" . ?≥)
                     ("&&" . ?∧)
                     ("||" . ?∨)
-                    ("int" . ?ℤ)
-                    ("float" . ?ℝ)
-                    ("char" . ?ℂ)
                     ("return" . ?⏎)
                     ("NULL" . ?∅)
                     ("nullptr" . ?∅)
