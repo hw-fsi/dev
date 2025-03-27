@@ -3,6 +3,9 @@ ADD config.yaml /root/.config/clangd/
 COPY build.sh /root/build.sh
 RUN /root/build.sh
 
+COPY build-gcc.sh /root/build-gcc.sh
+RUN /root/build-gcc.sh
+
 # zsh and tmux
 COPY .zshrc.tmp /root/.zshrc.tmp
 COPY .tmux.conf.tmp /root/.tmux.conf.tmp
