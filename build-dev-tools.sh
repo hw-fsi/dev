@@ -2,7 +2,7 @@
 set -euo pipefail
 
 export DEBIAN_FRONTEND=noninteractive
-
+export LD_LIBRARY_PATH=/usr/local/lib64:$LD_LIBRARY_PATH
 CMAKE_VERSION=v3.31.6
 CMAKE_TARGZ=cmake-$CMAKE_VERSION.tar.gz
 CMAKE_HOME=CMake-${CMAKE_VERSION:1}
