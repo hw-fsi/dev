@@ -1,5 +1,4 @@
 FROM ubuntu:22.04
-ADD config.yaml /root/.config/clangd/
 COPY build.sh /root/build.sh
 RUN /root/build.sh
 

@@ -4,7 +4,7 @@ set -euo pipefail
 export DEBIAN_FRONTEND=noninteractive
 
 GCC_VERSION=13
-CLANG_VERSION=18
+CLANG_VERSION=19
 
 # base
 apt update
